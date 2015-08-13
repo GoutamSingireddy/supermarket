@@ -1,0 +1,25 @@
+<h1>Products#new</h1>
+<p>Find me in app/views/products/new.html.erb</p>
+hi iam goutam<h1>Add a new product</h1>
+<%= form_for @product  do |form| %>
+
+    <p>
+      <%= form.label :name, "product name:" %>
+      <%= form.text_field :name %>
+    </p>
+    <p>
+      <%= form.label :price, "product price:" %>
+      <%= form.text_field :price %>
+    </p>
+    <p>
+      <%= form.label :size, "product size:" %>
+      <%= form.text_field :size %>
+    </p>
+
+
+
+    <p class='buttons'>
+      <%= form.submit "Shorten my URL" %>
+    </p>
+
+<% end %>
